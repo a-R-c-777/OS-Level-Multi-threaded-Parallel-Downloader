@@ -79,5 +79,5 @@ Once the KOS-DOWNLOADER shell is active (`root@dl-kernel:~#`), you can use the f
 ## 👥 Contributors
 * **Atharva Chivate** - *Process Scheduling & CPU Management* * **Vedant Dakhore** - *Memory Allocation & Buffer Management*
 
-*Developed as Project 20: Multithreaded Parallel Downloader for Vishwakarma Institute of Technology, Operating Systems Course.*
+*Developed as a Project: Multithreaded Parallel Downloader for Vishwakarma Institute of Technology, Operating Systems Course.*
 ```
