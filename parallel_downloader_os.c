@@ -74,7 +74,7 @@ void display_memory_map() {
 // --- MATCHES WRITE-UP: PROCESS MANAGEMENT MODULE ---
 
 void load_test_processes() {
-    // These exact names ensure your write-up text matches the screenshots perfectly
+    
     strcpy(process_queue[0].name, "dldsr_compute");
     process_queue[0].pid = 1001;
     process_queue[0].state = READY;
@@ -131,7 +131,7 @@ void execute_real_process(char *command) {
         process_count++;
 
         int status;
-        waitpid(pid, &status, 0); // Zombie prevention from your writeup
+        waitpid(pid, &status, 0); // Zombie prevention f
         
         for (int j = 0; j < process_count; j++) {
             if (process_queue[j].pid == pid) process_queue[j].state = TERMINATED;
