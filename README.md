@@ -29,10 +29,10 @@ This project was developed collaboratively as an academic engineering study, spl
 
 ## 🧠 System Architecture
 
-### 1. Process & CPU Manager (Member 1)
+### 1. Process & CPU Manager Atharva
 Responsible for the process lifecycle. When a download is initiated, the engine utilizes `fork()` to spawn independent execution branches and `execvp()` to assign them network utility tasks. It handles process synchronization, state transitions, and asynchronous hardware interrupts via `SIGKILL`.
 
-### 2. Memory & Buffer Manager (Member 2)
+### 2. Memory & Buffer Manager Vedant
 Responsible for RAM allocation. Implements a logical-to-physical Page Table. It utilizes `mmap()` with `MAP_ANONYMOUS | MAP_PRIVATE` flags to grant threads secure RAM buffers for incoming network packets, and strictly enforces `munmap()` upon termination to guarantee zero memory leaks.
 
 ---
